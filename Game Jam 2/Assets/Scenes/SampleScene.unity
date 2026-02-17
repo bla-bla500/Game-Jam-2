@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 133847234}
   m_Layer: 0
   m_Name: Big guy
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -376,7 +376,7 @@ GameObject:
   - component: {fileID: 558398203}
   m_Layer: 0
   m_Name: Small Guy
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -468,6 +468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SmallGuy
   cam: {fileID: 519420031}
+  projectile: {fileID: 2453240110511516672, guid: 3d33aa6dac4f2934eaea72501bc6c0a4, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
