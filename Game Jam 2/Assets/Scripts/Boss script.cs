@@ -47,7 +47,6 @@ public class Bossscript : MonoBehaviour
         {
             bossHealth -= 1;
             Destroy(collision.gameObject);
-            Debug.Log("hit");
         }
     }
 }
