@@ -4,8 +4,11 @@ using UnityEngine;
 public class Bossscript : MonoBehaviour
 {
     public static int bossHealth;
+    private Animator animator;
+    [SerializeField] private GameObject meatBall;
     void Start()
     {
+        animator = GetComponent<Animator>();
         bossHealth = 100;
         StartCoroutine("AttackTimer");
     }
@@ -22,6 +25,9 @@ public class Bossscript : MonoBehaviour
     {
         while (true)
         {
+            int whichAttack = Random.Range(1, 4);
+            DoAttack(whichAttack);
+            Debug.Log(whichAttack);
             yield return new WaitForSeconds(5);
         }
     }
@@ -31,7 +37,8 @@ public class Bossscript : MonoBehaviour
         switch (whichAttack)
         {
             case 1:
-                //attack one here
+                animator.SetInteger("whichAnimation", 1);
+
                 break;
             case 2:
                 //attack two here
@@ -49,4 +56,24 @@ public class Bossscript : MonoBehaviour
             Destroy(collision.gameObject);
         }
     }
+
+    public void SpawnMeatballs()
+    {
+        Vector3 basePosition;
+        basePosition = transform.position - new Vector3(0,2,0);
+        Instantiate(meatBall, basePosition, transform.rotation);
+        float modifier = 0;
+        for(int i = 0; i < 5; i++)
+        {
+            modifier += 1.5f;
+            Instantiate(meatBall, basePosition - new Vector3(modifier, 0, 0), transform.rotation);
+        }
+        modifier = 0;
+        for (int i = 0; i < 5; i++)
+        {
+            modifier -= 1.5f;
+            Instantiate(meatBall, basePosition - new Vector3(modifier, 0, 0), transform.rotation);
+        }
+    }
+
 }
