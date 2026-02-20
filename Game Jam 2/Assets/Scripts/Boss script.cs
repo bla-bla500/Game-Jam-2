@@ -43,7 +43,6 @@ public class Bossscript : MonoBehaviour
                 break;
             case 2:
                 animator.SetInteger("whichAnimation", 2);
-                SpawnHomingMeatball();
                 break;
             case 3:
                 //attack three here
