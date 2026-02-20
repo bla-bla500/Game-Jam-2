@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class BigGuy : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    public float moveSpeed;
 
-    public float xLimit = 10f;
-    public float yLimit = 5f;
+    public float xLimit;
+    public float yLimit;
 
     void Update()
     {

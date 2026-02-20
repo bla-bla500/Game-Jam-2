@@ -6,6 +6,7 @@ public class Bossscript : MonoBehaviour
     public static int bossHealth;
     private Animator animator;
     [SerializeField] private GameObject meatBall;
+    [SerializeField] private GameObject homingMeatBall;
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -28,7 +29,7 @@ public class Bossscript : MonoBehaviour
             int whichAttack = Random.Range(1, 4);
             DoAttack(whichAttack);
             Debug.Log(whichAttack);
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(Random.Range(1,6));
         }
     }
 
@@ -41,7 +42,8 @@ public class Bossscript : MonoBehaviour
 
                 break;
             case 2:
-                //attack two here
+                animator.SetInteger("whichAnimation", 2);
+                SpawnHomingMeatball();
                 break;
             case 3:
                 //attack three here
@@ -75,5 +77,13 @@ public class Bossscript : MonoBehaviour
             Instantiate(meatBall, basePosition - new Vector3(modifier, 0, 0), transform.rotation);
         }
     }
+
+    public void SpawnHomingMeatball()
+    {
+        Vector3 basePosition;
+        basePosition = transform.position - new Vector3(0, 2, 0);
+        Instantiate(homingMeatBall, basePosition + new Vector3(Random.Range(-10f,10f),0,0), transform.rotation);
+    }
+
 
 }
