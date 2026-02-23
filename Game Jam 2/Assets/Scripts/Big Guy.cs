@@ -7,6 +7,7 @@ public class BigGuy : MonoBehaviour
     public float xLimit;
     public float yLimit;
 
+
     void Update()
     {
         MovePlayer();
@@ -31,5 +32,15 @@ public class BigGuy : MonoBehaviour
         currentPosition.y = Mathf.Clamp(currentPosition.y, -yLimit, yLimit);
 
         transform.position = currentPosition;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("Ran1");
+        if (collision.gameObject.tag == "Boss Projectile")
+        {
+            Debug.Log("Ran2");
+            GameObject.Find("Canvas").GetComponent<UIManager>().Lose();
+        }
     }
 }

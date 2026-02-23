@@ -18,6 +18,7 @@ public class Bossscript : MonoBehaviour
     {
         if (bossHealth == 0)
         {
+            GameObject.Find("Canvas").GetComponent<UIManager>().Win();
             Destroy(gameObject);
         }
     }
