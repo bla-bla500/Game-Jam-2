@@ -30,6 +30,7 @@ public class UIManager : MonoBehaviour
 
     public void LoadGame(int scene)
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(scene);
     }
 
@@ -56,6 +57,8 @@ public class UIManager : MonoBehaviour
         Button1.SetActive(true);
         Button2.SetActive(true);
     }
+
+
 
     public void Exit()
     {

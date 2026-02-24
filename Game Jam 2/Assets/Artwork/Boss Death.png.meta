@@ -1,49 +1,16 @@
 fileFormatVersion: 2
-guid: 09a53dc03b00df840be7b420e70c8f4a
+guid: 82d0c8a3dbf2b33448726f53476c343a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1515463242625311043
-    second: Slime Death_0
+      213: -2494834463332224916
+    second: Boss Death_0
   - first:
-      213: 1618527085718814795
-    second: Slime Death_1
+      213: 717292809772381440
+    second: Boss Death_1
   - first:
-      213: 9122828122238679571
-    second: Slime Death_2
-  - first:
-      213: -4489622521952198930
-    second: Slime Death_3
-  - first:
-      213: 3994500989395596719
-    second: Slime Death_4
-  - first:
-      213: -6601314257244189817
-    second: Slime Death_5
-  - first:
-      213: 5616096123015876157
-    second: Slime Death_6
-  - first:
-      213: 692501401683792041
-    second: Slime Death_7
-  - first:
-      213: -1606319025386909581
-    second: Slime Death_8
-  - first:
-      213: -5093362325295943284
-    second: Slime Death_9
-  - first:
-      213: -6444873368294917307
-    second: Slime Death_10
-  - first:
-      213: 9101662823258199192
-    second: Slime Death_11
-  - first:
-      213: -5093274269884723284
-    second: Slime Death_12
-  - first:
-      213: 9153724917367611030
-    second: Slime Death_13
+      213: -2806732047394824475
+    second: Boss Death_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,111 +106,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Slime Death_0
+      name: Boss Death_0
       rect:
         serializedVersion: 2
-        x: 159
-        y: 2207
-        width: 754
-        height: 690
+        x: 0
+        y: 8171
+        width: 6144
+        height: 1045
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dbe1829c53ef7fae0800000000000000
-      internalID: -1515463242625311043
+      spriteID: c603ea71641906dd0800000000000000
+      internalID: -2494834463332224916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slime Death_1
+      name: Boss Death_1
       rect:
         serializedVersion: 2
-        x: 1199
-        y: 2223
-        width: 722
-        height: 658
+        x: 0
+        y: 4763
+        width: 6144
+        height: 1382
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b404e932fc9267610800000000000000
-      internalID: 1618527085718814795
+      spriteID: 005bc66920654f900800000000000000
+      internalID: 717292809772381440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slime Death_2
+      name: Boss Death_2
       rect:
         serializedVersion: 2
-        x: 255
-        y: 1343
-        width: 594
-        height: 482
+        x: 0
+        y: 1415
+        width: 6144
+        height: 1658
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 31afaf4a7dbca9e70800000000000000
-      internalID: 9122828122238679571
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime Death_3
-      rect:
-        serializedVersion: 2
-        x: 1167
-        y: 1199
-        width: 818
-        height: 706
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: eee12737a18a1b1c0800000000000000
-      internalID: -4489622521952198930
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime Death_4
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 95
-        width: 1052
-        height: 874
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fa5fedf6c715f6730800000000000000
-      internalID: 3994500989395596719
+      spriteID: 5ee9357d21c7c09d0800000000000000
+      internalID: -2806732047394824475
       vertices: []
       indices: 
       edges: []
@@ -252,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 69813f8b79e7e3e47a191b0084e0225a
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -262,20 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Slime Death_0: -1515463242625311043
-      Slime Death_1: 1618527085718814795
-      Slime Death_10: -6444873368294917307
-      Slime Death_11: 9101662823258199192
-      Slime Death_12: -5093274269884723284
-      Slime Death_13: 9153724917367611030
-      Slime Death_2: 9122828122238679571
-      Slime Death_3: -4489622521952198930
-      Slime Death_4: 3994500989395596719
-      Slime Death_5: -6601314257244189817
-      Slime Death_6: 5616096123015876157
-      Slime Death_7: 692501401683792041
-      Slime Death_8: -1606319025386909581
-      Slime Death_9: -5093362325295943284
+      Boss Death_0: -2494834463332224916
+      Boss Death_1: 717292809772381440
+      Boss Death_2: -2806732047394824475
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,15 +1,21 @@
 using System.Collections;
+using UnityEditor;
 using UnityEngine;
 
 public class Bossscript : MonoBehaviour
 {
     public static int bossHealth;
     private Animator animator;
+    private SpriteRenderer spriteRenderer;
+    private PolygonCollider2D polyCollider;
+    [SerializeField] private Sprite[] sprites;
     [SerializeField] private GameObject meatBall;
     [SerializeField] private GameObject homingMeatBall;
     void Start()
     {
         animator = GetComponent<Animator>();
+        polyCollider = GetComponent<PolygonCollider2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         bossHealth = 100;
         StartCoroutine("AttackTimer");
     }
@@ -34,6 +40,18 @@ public class Bossscript : MonoBehaviour
         }
     }
 
+    int i = 0;
+    public void UpdateColider()
+    {
+        Debug.Log(sprites[i]);
+        polyCollider.CreateFromSprite(sprites[i]);
+        i++;
+        if (i == 8)
+        {
+            i = 0;
+        }
+    }
+
     private void DoAttack(int whichAttack)
     {
         switch (whichAttack)
@@ -46,7 +64,7 @@ public class Bossscript : MonoBehaviour
                 animator.SetInteger("whichAnimation", 2);
                 break;
             case 3:
-                //attack three here
+                animator.SetInteger("whichAnimation", 3);
                 break;
         }
     }

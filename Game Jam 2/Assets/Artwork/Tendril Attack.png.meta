@@ -11,15 +11,6 @@ TextureImporter:
   - first:
       213: -3433612409486023418
     second: Tendril Attack_2
-  - first:
-      213: 2027217682468230675
-    second: Tendril Attack_3
-  - first:
-      213: 7950585755623379634
-    second: Tendril Attack_4
-  - first:
-      213: -4607773430594539682
-    second: Tendril Attack_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -118,12 +109,12 @@ TextureImporter:
       name: Tendril Attack_0
       rect:
         serializedVersion: 2
-        x: 95
-        y: 2447
-        width: 422
-        height: 625
+        x: 0
+        y: 8060
+        width: 3001
+        height: 1156
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -140,12 +131,12 @@ TextureImporter:
       name: Tendril Attack_1
       rect:
         serializedVersion: 2
-        x: 839
-        y: 2279
-        width: 614
-        height: 793
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3015
+        y: 7723
+        width: 3108
+        height: 1493
+      alignment: 9
+      pivot: {x: 0.50984955, y: 0.56151164}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -162,12 +153,12 @@ TextureImporter:
       name: Tendril Attack_2
       rect:
         serializedVersion: 2
-        x: 1559
-        y: 1955
-        width: 698
-        height: 1117
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 6117
+        y: 7054
+        width: 3099
+        height: 2162
+      alignment: 9
+      pivot: {x: 0.5049392, y: 0.6911529}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -185,19 +176,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 11
-        width: 673
-        height: 1526
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 3253
+        width: 3016
+        height: 2895
+      alignment: 9
+      pivot: {x: 0.5152252, y: 0.77493405}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 316d8e5ddbf122c10800000000000000
-      internalID: 2027217682468230675
+      spriteID: e001f3710b4768d46ae005069bca1197
+      internalID: -264273039
       vertices: []
       indices: 
       edges: []
@@ -206,20 +197,20 @@ TextureImporter:
       name: Tendril Attack_4
       rect:
         serializedVersion: 2
-        x: 839
-        y: 539
-        width: 410
-        height: 998
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3000
+        y: 3299
+        width: 3169
+        height: 2855
+      alignment: 9
+      pivot: {x: 0.5193203, y: 0.7787858}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2b25638ee97265e60800000000000000
-      internalID: 7950585755623379634
+      spriteID: e4132a259f0c2e64d866c76da007d487
+      internalID: 374498684
       vertices: []
       indices: 
       edges: []
@@ -228,20 +219,64 @@ TextureImporter:
       name: Tendril Attack_5
       rect:
         serializedVersion: 2
-        x: 1799
-        y: 1307
-        width: 194
-        height: 230
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 6168
+        y: 4340
+        width: 3047
+        height: 1799
+      alignment: 9
+      pivot: {x: 0.500008, y: 0.6328882}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e5fede75a76ed00c0800000000000000
-      internalID: -4607773430594539682
+      spriteID: 2d9ad9c69c7ff5e4fa799309e4b44e75
+      internalID: 1653072966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tendril Attack_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1860
+        width: 3001
+        height: 1225
+      alignment: 9
+      pivot: {x: 0.5153013, y: 0.47500956}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ce59b1239fe131499a357cde96b061e
+      internalID: 1514082248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tendril Attack_7
+      rect:
+        serializedVersion: 2
+        x: 3016
+        y: 1845
+        width: 3123
+        height: 1233
+      alignment: 9
+      pivot: {x: 0.50980234, y: 0.58689684}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b93e55e12751fd4d98e751f04ce652e
+      internalID: -1653086329
       vertices: []
       indices: 
       edges: []
@@ -250,7 +285,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1a1bbf7ebc7f5124f9140cdcd74e0e2b
     internalID: 0
     vertices: []
     indices: 
@@ -258,14 +293,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":2,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Tendril Attack_0: -2914079872397000302
       Tendril Attack_1: -2359056059745471587
       Tendril Attack_2: -3433612409486023418
-      Tendril Attack_3: 2027217682468230675
-      Tendril Attack_4: 7950585755623379634
-      Tendril Attack_5: -4607773430594539682
+      Tendril Attack_3: -264273039
+      Tendril Attack_4: 374498684
+      Tendril Attack_5: 1653072966
+      Tendril Attack_6: 1514082248
+      Tendril Attack_7: -1653086329
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -269,6 +269,7 @@ GameObject:
   - component: {fileID: 133847234}
   - component: {fileID: 133847237}
   - component: {fileID: 133847238}
+  - component: {fileID: 133847239}
   m_Layer: 0
   m_Name: Big guy
   m_TagString: Player
@@ -428,6 +429,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &133847239
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133847233}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 431a1d3d6c768ed488c7c2e4aefb6c92, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &223187650
 GameObject:
   m_ObjectHideFlags: 0
@@ -1110,6 +1133,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58f85c9b8acf07f499b78638c04b6632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bossscript
+  sprites:
+  - {fileID: -2914079872397000302, guid: 3eec542519e2e0240a0735ae4089bc74, type: 3}
+  - {fileID: -2359056059745471587, guid: 3eec542519e2e0240a0735ae4089bc74, type: 3}
+  - {fileID: -3433612409486023418, guid: 3eec542519e2e0240a0735ae4089bc74, type: 3}
+  - {fileID: -264273039, guid: 3eec542519e2e0240a0735ae4089bc74, type: 3}
+  - {fileID: 374498684, guid: 3eec542519e2e0240a0735ae4089bc74, type: 3}
+  - {fileID: 1653072966, guid: 3eec542519e2e0240a0735ae4089bc74, type: 3}
+  - {fileID: 1514082248, guid: 3eec542519e2e0240a0735ae4089bc74, type: 3}
+  - {fileID: -1653086329, guid: 3eec542519e2e0240a0735ae4089bc74, type: 3}
   meatBall: {fileID: 2453240110511516672, guid: 5fbd505f84b25b4418476563fb27eb07, type: 3}
   homingMeatBall: {fileID: 2453240110511516672, guid: f024b69a5d9b6c44986bf6ed8e1195d4, type: 3}
 --- !u!60 &645243002
