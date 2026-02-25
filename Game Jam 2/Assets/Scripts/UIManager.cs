@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
     private GameObject controlPannel;
+    private GameObject credits;
     private GameObject win;
     private GameObject lose;
     private GameObject Button1;
@@ -14,6 +15,8 @@ public class UIManager : MonoBehaviour
         {
             controlPannel = GameObject.Find("Controls");
             controlPannel.SetActive(false);
+            credits = GameObject.Find("Credits");
+            credits.SetActive(false);
         }
         if (SceneManager.GetActiveScene().buildIndex == 1)
         {
@@ -41,6 +44,16 @@ public class UIManager : MonoBehaviour
     public void DeActivateControlPannel()
     {
         controlPannel.SetActive(false);
+    }
+
+    public void ActivateCredits()
+    {
+        credits.SetActive(true);
+    }
+
+    public void DeActivateCredits()
+    {
+        credits.SetActive(false);
     }
 
     public void Win()
