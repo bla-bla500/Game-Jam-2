@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
@@ -8,6 +9,8 @@ public class Bossscript : MonoBehaviour
     private Animator animator;
     private SpriteRenderer spriteRenderer;
     private PolygonCollider2D polyCollider;
+    private AudioSource audio1;
+    private AudioSource audio2;
     [SerializeField] private Sprite[] sprites;
     [SerializeField] private GameObject meatBall;
     [SerializeField] private GameObject homingMeatBall;
@@ -16,6 +19,8 @@ public class Bossscript : MonoBehaviour
         animator = GetComponent<Animator>();
         polyCollider = GetComponent<PolygonCollider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        audio1 = GetComponents<AudioSource>()[0];
+        audio2 = GetComponents<AudioSource>()[1];
         bossHealth = 100;
         StartCoroutine("AttackTimer");
     }
@@ -25,8 +30,15 @@ public class Bossscript : MonoBehaviour
         if (bossHealth == 0)
         {
             GameObject.Find("Canvas").GetComponent<UIManager>().Win();
-            Destroy(gameObject);
+            animator.SetBool("Dead", true);
         }
+    }
+
+    private IEnumerator Damage()
+    {
+        spriteRenderer.color = new Color(255, 255, 255, 255);
+        yield return new WaitForSeconds(0.05f);
+        spriteRenderer.color = new Color(1, 1, 1, 1);
     }
 
     private IEnumerator AttackTimer()
@@ -35,15 +47,13 @@ public class Bossscript : MonoBehaviour
         {
             int whichAttack = Random.Range(1, 4);
             DoAttack(whichAttack);
-            Debug.Log(whichAttack);
-            yield return new WaitForSeconds(Random.Range(1,6));
+            yield return new WaitForSeconds(Random.Range(1,5));
         }
     }
 
     int i = 0;
     public void UpdateColider()
     {
-        Debug.Log(sprites[i]);
         polyCollider.CreateFromSprite(sprites[i]);
         i++;
         if (i == 8)
@@ -51,14 +61,15 @@ public class Bossscript : MonoBehaviour
             i = 0;
         }
     }
-
+    int j = 0;
     private void DoAttack(int whichAttack)
     {
+        Debug.Log("Ran " + j);
+        j++;
         switch (whichAttack)
         {
             case 1:
                 animator.SetInteger("whichAnimation", 1);
-
                 break;
             case 2:
                 animator.SetInteger("whichAnimation", 2);
@@ -74,7 +85,18 @@ public class Bossscript : MonoBehaviour
         {
             bossHealth -= 1;
             Destroy(collision.gameObject);
+            StartCoroutine("Damage");
         }
+    }
+
+    private void PlayAudio1()
+    {
+        audio1.Play();
+    }
+
+    private void PlayAudio2()
+    {
+        audio2.Play();
     }
 
     public void SpawnMeatballs()
@@ -103,5 +125,8 @@ public class Bossscript : MonoBehaviour
         Instantiate(homingMeatBall, basePosition + new Vector3(Random.Range(-10f,10f),0,0), transform.rotation);
     }
 
-
+    public void StopTime()
+    {
+        Time.timeScale = 0f;
+    }
 }

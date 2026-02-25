@@ -36,15 +36,18 @@ public class BigGuy : MonoBehaviour
 
     public void StopTime()
     {
-        //Time.timeScale = 0f;
+        Time.timeScale = 0f;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Boss Projectile")
         {
-            gameObject.GetComponent<Animator>().SetBool("Dead",true);
-            GameObject.Find("Canvas").GetComponent<UIManager>().Lose();
+            if (GameObject.Find("Canvas").GetComponent<UIManager>().done == false)
+            {
+                gameObject.GetComponent<Animator>().SetBool("Dead", true);
+                GameObject.Find("Canvas").GetComponent<UIManager>().Lose();
+            }
         }
     }
 }

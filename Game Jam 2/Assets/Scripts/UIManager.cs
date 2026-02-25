@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
     private GameObject lose;
     private GameObject Button1;
     private GameObject Button2;
+    public bool done;
     void Start()
     {
         if (SceneManager.GetActiveScene().buildIndex == 0)
@@ -46,16 +47,24 @@ public class UIManager : MonoBehaviour
 
     public void Win()
     {
-        win.SetActive(true);
-        Button1.SetActive(true);
-        Button2.SetActive(true);
+        if (done == false)
+        {
+            win.SetActive(true);
+            Button1.SetActive(true);
+            Button2.SetActive(true);
+            done = true;
+        }
     }
 
     public void Lose()
     {
-        lose.SetActive(true);
-        Button1.SetActive(true);
-        Button2.SetActive(true);
+        if (done == false)
+        {
+            lose.SetActive(true);
+            Button1.SetActive(true);
+            Button2.SetActive(true);
+            done = true;
+        }
     }
 
 

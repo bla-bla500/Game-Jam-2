@@ -28,6 +28,7 @@ public class SmallGuy : MonoBehaviour
         while (Input.GetKey(KeyCode.Space))
         {
             Instantiate(projectile, gameObject.transform.position, gameObject.transform.rotation);
+            GetComponent<AudioSource>().Play();
             yield return new WaitForSeconds(0.2f);
         }
     }
