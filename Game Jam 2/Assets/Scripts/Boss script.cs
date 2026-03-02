@@ -21,7 +21,7 @@ public class Bossscript : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         audio1 = GetComponents<AudioSource>()[0];
         audio2 = GetComponents<AudioSource>()[1];
-        bossHealth = 100;
+        bossHealth = 1000;
         StartCoroutine("AttackTimer");
     }
 
@@ -61,11 +61,8 @@ public class Bossscript : MonoBehaviour
             i = 0;
         }
     }
-    int j = 0;
     private void DoAttack(int whichAttack)
     {
-        Debug.Log("Ran " + j);
-        j++;
         switch (whichAttack)
         {
             case 1:
